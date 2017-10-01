@@ -5,7 +5,7 @@ main()
 {
   int fahr, celsius;
   int lower, upper, step;
-  iteration = 0;
+
   lower = 0;      /* lower limit of temperature scale  */
   upper = 300;    /* upper limit */
   step = 20;      /* step size */
@@ -13,7 +13,7 @@ main()
   fahr = lower;
   while (fahr <= upper) {
     celsius = 5 * (fahr-32) / 9;
-    printf("%d\t%d\n%d\n", fahr, celsius,iteration);
-    iteration = iteration + 1;
+    printf("%d\t%d\n", fahr, celsius);
+    fahr = fahr + step;
   }
 }
